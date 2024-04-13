@@ -177,44 +177,5 @@ signed main()
 // Here Barkat plays first and Abou Trika says second
 void solve()
 {
-  int x, y;
-  cin >> x >> y;
-  vector<vi> dp(101, vi(101));
-  dp[0][1] = 1;
-  dp[1][0] = 1;
-  dp[1][1] = 1;
-  dp[0][2] = 0;
-  dp[2][0] = 0; // 0 means bob 1 means alice
-  Fo(x, 1, 100)
-  {
-    Fo(y, 1, 100)
-    {
-      dp[x][y] = dp[x - 1][y] || dp[x][y - 1] || dp[x - 1][y - 1] ? 1 : 0;
-    }
-  }
-  Fo(i, 0, 100)
-  {
-    print(dp[i]);
-  }
-
-  if (x == 0 and y == 0)
-  {
-    print("Bob");
-  }
-  else if (x == 1 or y == 1)
-  {
-    print("Alice");
-  }
-  else if ((x == 0 and y != 1) or (x != 1 and y == 0))
-    print("Bob");
-  else if (x >= 1 and y >= 1)
-    print("Alice");
-  else
-    print("Alice");
+  // Sorry i couldn't solve this question
 }
-
-// 0100000000000
-// 1111111111111
-// 0111111111111
-// 0111111111111
-// pattern
