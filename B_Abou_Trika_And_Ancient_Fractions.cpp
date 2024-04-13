@@ -179,7 +179,9 @@ void solve()
 { // WA test 53 please don't refer to this solution for this question
   int n;
   cin >> n;
-  if (n == -1 or n == 0)
+  if (n == -1)
+    print(-2 << sp << -2);
+  else if (n == 0)
     pm;
   else
     print(n * n + n << sp << n + 1);
