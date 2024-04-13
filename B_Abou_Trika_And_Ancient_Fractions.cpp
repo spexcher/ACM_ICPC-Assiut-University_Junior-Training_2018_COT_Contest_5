@@ -176,8 +176,7 @@ signed main()
 }
 
 void solve()
-{ // WA test 53 please don't refer to this solution for this question
-  int n;
+{
   cin >> n;
   if (n == -1)
     print(-2 << sp << -2);
