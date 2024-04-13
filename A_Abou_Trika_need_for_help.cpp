@@ -179,5 +179,5 @@ void solve()
 {
   int n;
   cin >> n;
-  print(n * (n - 1) / 2);
+  print(n * (n + 1) / 2);
 }
