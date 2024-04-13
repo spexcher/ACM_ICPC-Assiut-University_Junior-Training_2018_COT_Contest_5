@@ -176,13 +176,11 @@ signed main()
 }
 
 void solve()
-{
+{ // WA test 53 please don't refer to this solution for this question
   int n;
   cin >> n;
-  if (n == -1)
+  if (n == -1 or n == 0)
     pm;
-  else if (n == 0)
-    print(INT_MAX << sp << -INT_MAX);
   else
     print(n * n + n << sp << n + 1);
 }
